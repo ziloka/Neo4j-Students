@@ -64,7 +64,7 @@ How to build and run
 7 run command below on a Command prompt in the project root where has pom.xml file.
 mvn clean package 
 8. How to run the application
-	cd to target folder to run command below
+	cd to target folder, to run command below:
 	java -jar neo4j-students-0.0.1-SNAPSHOT.jar
 	You should see something like below on the command prompt.
 	"com.ziloka.neo4j.StudentsApplication     : Started StudentsApplication in 7.328 seconds (JVM running for 8.371)"
