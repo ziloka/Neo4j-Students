@@ -42,7 +42,6 @@ This project is using Java 17,apache-maven-3.8.5
    To import the existing maven project into Eclipse, choose the Neo4j-Students/pom.xml 
 	
 5. download and Install neo4j desktop, https://neo4j.com/download-neo4j-now/?utm_program=na-prospecting&utm_source=bing&utm_medium=cpc&utm_campaign=na-search-offers&utm_adgroup=desktop-download&utm_content=desktop-download&utm_program=&utm_source=bing&utm_medium=cpc&utm_campaign=&utm_adgroup=&msclkid=a3c8ca9f74771b993668a816744a2795
-If you use other OS, please change #3 and 4 accordingly
 
 6. Launch the neo4j desktop. After it is opened
    a. Please create a new project from directory, choose this project's folder Neo4j-Students.
