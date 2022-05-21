@@ -1,4 +1,4 @@
-= Students Example Application
+= Students Example Application, students take courses
 
 The source code is at
 https://github.com/ziloka/Neo4j-Students/
@@ -29,7 +29,7 @@ This project is using Java 17,apache-maven-3.8.5
 |===
 
 
-How to setup local development environment (Windows):
+*How to setup local development environment (Windows):
 1. download and install OpenJDK from https://openjdk.java.net/
 
 2. download and Install apache-maven-3.8.5 from https://maven.apache.org/download.cgi
@@ -39,15 +39,7 @@ How to setup local development environment (Windows):
    git clone https://github.com/ziloka/Neo4j-Students/
    
 4. download and install Eclipse IDE from https://www.eclipse.org/downloads/, "Get Eclipse IDE 2022-03"
-   a. to import the existing maven project into Eclipse, choose the Neo4j-Students/pom.xml 
-   b. You can build the project by selecting Project -> Build -> Clean
-   c. You can run the Project by edit Run Configuration. Add a Java application as StudentsApplication, select main class name called StudentsApplication. 
-       At environment tab, add the followings parameters:   
-        database.neo4j.dburi=bolt://localhost:7687
-		database.neo4j.authentication.username=neo4j
-		database.neo4j.authentication.password=password
-		database.data.neo4j.database=students
-	d. You can debug the application as well, just by running the Debug.
+   To import the existing maven project into Eclipse, choose the Neo4j-Students/pom.xml 
 	
 5. download and Install neo4j desktop, https://neo4j.com/download-neo4j-now/?utm_program=na-prospecting&utm_source=bing&utm_medium=cpc&utm_campaign=na-search-offers&utm_adgroup=desktop-download&utm_content=desktop-download&utm_program=&utm_source=bing&utm_medium=cpc&utm_campaign=&utm_adgroup=&msclkid=a3c8ca9f74771b993668a816744a2795
 If you use other OS, please change #3 and 4 accordingly
@@ -60,16 +52,35 @@ If you use other OS, please change #3 and 4 accordingly
       Mouse moves over the file, click on the open button. It will be opened in the Neo4j Browser. Click on the blue arrow (run). 
 	  Run the query MATCH (n) RETURN n; to double check.
 
-How to build and run
-7 run command below on a Command prompt in the project root where has pom.xml file.
-mvn clean package 
+7. How to build
+	a. from command line, run command below under Neo4j-Students/, the project root where has pom.xml file.
+	mvn clean package 
+	b. build inside Eclipse IDE by selecting menu Project -> Build -> Clean
+
 8. How to run the application
-	cd to target folder, to run command below:
-	java -jar neo4j-students-0.0.1-SNAPSHOT.jar
-	You should see something like below on the command prompt.
+    a. from command line, run two commands below:
+		cd target
+		java -jar neo4j-students-0.0.1-SNAPSHOT.jar
+	b. run inside Eclipse IDE by editing Run Configuration from Project menu. Add a Java application as StudentsApplication, select main class name called StudentsApplication. 
+       At environment tab, add the followings parameters:   
+        database.neo4j.dburi=bolt://localhost:7687
+		database.neo4j.authentication.username=neo4j
+		database.neo4j.authentication.password=password
+		database.data.neo4j.database=students
+		
+	You should see something like below on the command prompt or Eclipse console log.
 	"com.ziloka.neo4j.StudentsApplication     : Started StudentsApplication in 7.328 seconds (JVM running for 8.371)"
 	There is a log file called studentApp.log in the target folder 
+	
+	c. You can debug the application through Eclipse IDE, just by running the Debug and set a breakpoint.
+	
 9. How to test
 	load http://localhost:8080/ on a browser
 10. Have fun!!
 
+*References:
+1. https://neo4j.com/use-cases/
+2. https://neo4j.com/developer/example-data/
+3. https://neo4j.com/developer/cypher/querying/
+4. https://neo4j.com/developer-blog/visualizing-graphs-in-3d-with-webgl/
+5. https://neo4j.com/developer/graph-visualization/
