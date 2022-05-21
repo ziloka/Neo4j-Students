@@ -38,7 +38,9 @@ This project is using Java 17,apache-maven-3.8.5
    use the command to clone this project
    git clone https://github.com/ziloka/Neo4j-Students/
    
-4. download and install Eclipse IDE from https://www.eclipse.org/downloads/, "Get Eclipse IDE 2022-03". Install the version for Eclipse IDE for Java Developers.
+4. download and install Eclipse IDE from https://www.eclipse.org/downloads/, "Get Eclipse IDE 2022-03". 
+   Install the version for Eclipse IDE for Java Developers. 
+   Also install Eclipse Web Developer Tools plug-in from Eclipse Marketplace.
    To import the existing maven project into Eclipse, choose the Neo4j-Students/pom.xml 
 	
 5. download and Install neo4j desktop, https://neo4j.com/download-neo4j-now/?utm_program=na-prospecting&utm_source=bing&utm_medium=cpc&utm_campaign=na-search-offers&utm_adgroup=desktop-download&utm_content=desktop-download&utm_program=&utm_source=bing&utm_medium=cpc&utm_campaign=&utm_adgroup=&msclkid=a3c8ca9f74771b993668a816744a2795
